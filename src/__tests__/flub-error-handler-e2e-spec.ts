@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { Controller, Get, UseFilters, INestApplication } from '@nestjs/common';
-import FlubErrorHandler from './../flub-error-handler';
+import { FlubErrorHandler } from './../flub-error-handler';
 import * as request from 'supertest';
 
 let flubModule: TestingModule;
