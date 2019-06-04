@@ -1,10 +1,10 @@
 import { Catch, ExceptionFilter, ArgumentsHost } from '@nestjs/common';
-import { ErrorHandler } from './error-handler';
+import ErrorHandler from './error-handler';
 import { FlubOptions } from './interfaces';
 import { Logger } from '@nestjs/common';
 
 @Catch(Error)
-export class FlubErrorHandler implements ExceptionFilter {
+export default class FlubErrorHandler implements ExceptionFilter {
   private options: FlubOptions;
 
   constructor(options: FlubOptions = { theme: 'dark', quote: false }) {

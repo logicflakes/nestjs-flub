@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import * as Mustache from 'mustache';
 import * as path from 'path';
 
-export class ErrorHandler {
+export default class ErrorHandler {
   private VIEW_PATH: string = './themes/error.default.mustache';
   private viewTemplate = fs.readFileSync(
     path.join(__dirname, this.VIEW_PATH),
