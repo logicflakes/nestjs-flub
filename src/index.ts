@@ -1,2 +1,2 @@
-export * from './error-handler';
-export * from './flub-error-handler';
+export import ErrorHandler = require('./error-handler');
+export import FlubErrorHandler = require('./flub-error-handler');
